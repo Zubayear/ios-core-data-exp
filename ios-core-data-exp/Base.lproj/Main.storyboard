@@ -214,23 +214,23 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Xw7-QW-TNX">
-                                <rect key="frame" x="20" y="169" width="374" height="260"/>
+                                <rect key="frame" x="20" y="169" width="374" height="180"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="What do you want man?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="i6a-vD-rSa">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="167.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="87.5"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <color key="textColor" red="0.56470588239999997" green="0.047058823530000002" blue="0.2470588235" alpha="0.75" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Menlo-Italic" family="Menlo" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select one" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cz5-vv-yfe">
-                                        <rect key="frame" x="0.0" y="182.5" width="92" height="23.5"/>
+                                        <rect key="frame" x="0.0" y="102.5" width="92" height="23.5"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
                                         <color key="textColor" red="0.56470588239999997" green="0.047058823530000002" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="imR-BY-tVm">
-                                        <rect key="frame" x="0.0" y="221" width="374" height="39"/>
+                                        <rect key="frame" x="0.0" y="141" width="374" height="39"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2P6-BK-PMg">
                                                 <rect key="frame" x="0.0" y="0.0" width="177" height="39"/>
@@ -265,15 +265,15 @@
                                     <constraint firstItem="i6a-vD-rSa" firstAttribute="leading" secondItem="Xw7-QW-TNX" secondAttribute="leading" id="Hrl-G3-3Dp"/>
                                     <constraint firstAttribute="bottom" secondItem="imR-BY-tVm" secondAttribute="bottom" id="WTX-vC-fbg"/>
                                     <constraint firstItem="Cz5-vv-yfe" firstAttribute="top" secondItem="i6a-vD-rSa" secondAttribute="bottom" constant="15" id="ezq-m8-bRG"/>
-                                    <constraint firstAttribute="height" constant="260" id="kwy-Fm-WnI"/>
+                                    <constraint firstAttribute="height" constant="180" id="kwy-Fm-WnI"/>
                                     <constraint firstItem="imR-BY-tVm" firstAttribute="top" secondItem="Cz5-vv-yfe" secondAttribute="bottom" constant="15" id="xMj-P4-4Wa"/>
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4xZ-vM-Wo9">
-                                <rect key="frame" x="0.0" y="822" width="414" height="40"/>
+                                <rect key="frame" x="0.0" y="812" width="414" height="50"/>
                                 <color key="backgroundColor" red="0.56470588239999997" green="0.047058823530000002" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="HD8-Po-ylB"/>
+                                    <constraint firstAttribute="height" constant="50" id="HD8-Po-ylB"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="22"/>
                                 <state key="normal" title="NEXT">
