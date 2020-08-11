@@ -15,6 +15,7 @@
 		EDD16FB824E27A6C00DF57B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDD16FB724E27A6C00DF57B2 /* Assets.xcassets */; };
 		EDD16FBB24E27A6C00DF57B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDD16FB924E27A6C00DF57B2 /* LaunchScreen.storyboard */; };
 		EDD16FC724E28B7D00DF57B2 /* GoalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD16FC624E28B7D00DF57B2 /* GoalCell.swift */; };
+		EDD16FCA24E2E3B000DF57B2 /* GoalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD16FC924E2E3B000DF57B2 /* GoalType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		EDD16FBA24E27A6C00DF57B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EDD16FBC24E27A6C00DF57B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDD16FC624E28B7D00DF57B2 /* GoalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalCell.swift; sourceTree = "<group>"; };
+		EDD16FC924E2E3B000DF57B2 /* GoalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 		EDD16FC424E27C8A00DF57B2 /* Enums */ = {
 			isa = PBXGroup;
 			children = (
+				EDD16FC924E2E3B000DF57B2 /* GoalType.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 			files = (
 				EDD16FB024E27A6300DF57B2 /* GoalVC.swift in Sources */,
 				EDD16FAC24E27A6300DF57B2 /* AppDelegate.swift in Sources */,
+				EDD16FCA24E2E3B000DF57B2 /* GoalType.swift in Sources */,
 				EDD16FB624E27A6300DF57B2 /* ios_core_data_exp.xcdatamodeld in Sources */,
 				EDD16FC724E28B7D00DF57B2 /* GoalCell.swift in Sources */,
 				EDD16FAE24E27A6300DF57B2 /* SceneDelegate.swift in Sources */,
