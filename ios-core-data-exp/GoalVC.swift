@@ -3,16 +3,20 @@ import UIKit
 class GoalVC: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
     }
-
-    @IBAction func addGoalBtnPressed(_ sender: Any) {
-        print("Debug: Goal Btn pressed")
-    }
     
+    @IBAction func addGoalBtnPressed(_ sender: Any) {
+        guard let createGoalVC = storyboard?.instantiateViewController(withIdentifier: "createGoalVC") else {
+            return
+        }
+        
+        presentDetail(createGoalVC)
+    }
 }
 
 extension GoalVC: UITableViewDataSource, UITableViewDelegate {

@@ -15,7 +15,7 @@ class CreateGoalVC: UIViewController {
     }
     
     @IBAction func backBtnPressed(_ sender: Any) {
-        dismiss(animated: false, completion: nil)
+        dismissDetail()
     }
     
     @IBAction func shortTermBtnPressed(_ sender: Any) {

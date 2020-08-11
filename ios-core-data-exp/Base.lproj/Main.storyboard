@@ -10,7 +10,7 @@
         <!--GoalVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="GoalVC" customModule="ios_core_data_exp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="goalVC" id="BYZ-38-t0r" customClass="GoalVC" customModule="ios_core_data_exp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -39,8 +39,7 @@
                                         <rect key="frame" x="359" y="34" width="35" height="32"/>
                                         <state key="normal" image="addGoal"/>
                                         <connections>
-                                            <action selector="addGoalBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Usv-6U-LZS"/>
-                                            <segue destination="m4p-th-LG9" kind="show" id="5cD-qh-wsY"/>
+                                            <action selector="addGoalBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hxx-bE-EWi"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -170,13 +169,13 @@
         <!--Create GoalVC-->
         <scene sceneID="fAR-oD-viv">
             <objects>
-                <viewController id="m4p-th-LG9" customClass="CreateGoalVC" customModule="ios_core_data_exp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="createGoalVC" id="m4p-th-LG9" customClass="CreateGoalVC" customModule="ios_core_data_exp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wm8-hw-Laq">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jul-iS-Yb1">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="100"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="0eX-ek-10y">
                                         <rect key="frame" x="156.5" y="39.5" width="101" height="21"/>
@@ -215,7 +214,7 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Xw7-QW-TNX">
-                                <rect key="frame" x="20" y="125" width="374" height="260"/>
+                                <rect key="frame" x="20" y="169" width="374" height="260"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="What do you want man?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="i6a-vD-rSa">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="167.5"/>
@@ -271,7 +270,7 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4xZ-vM-Wo9">
-                                <rect key="frame" x="0.0" y="768" width="414" height="40"/>
+                                <rect key="frame" x="0.0" y="822" width="414" height="40"/>
                                 <color key="backgroundColor" red="0.56470588239999997" green="0.047058823530000002" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="HD8-Po-ylB"/>
