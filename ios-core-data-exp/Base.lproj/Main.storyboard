@@ -311,6 +311,117 @@
             </objects>
             <point key="canvasLocation" x="931.88405797101461" y="138.61607142857142"/>
         </scene>
+        <!--Finish GoalVC-->
+        <scene sceneID="V2z-FA-8aa">
+            <objects>
+                <viewController storyboardIdentifier="FinishGoalVC" id="qIG-V9-kNs" customClass="FinishGoalVC" customModule="ios_core_data_exp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tH0-4F-nxK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8bH-j5-4jG">
+                                <rect key="frame" x="0.0" y="44" width="414" height="100"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="HEQ-Fm-gDg">
+                                        <rect key="frame" x="156.5" y="39.5" width="101" height="21"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GOAL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="chI-yQ-U2K">
+                                                <rect key="frame" x="0.0" y="0.0" width="48" height="21"/>
+                                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
+                                                <color key="textColor" red="0.85490196080000003" green="0.96862745100000003" blue="0.65098039220000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="POST" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7YP-9q-30G">
+                                                <rect key="frame" x="50" y="0.0" width="51" height="21"/>
+                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="17"/>
+                                                <color key="textColor" red="0.85490196080000003" green="0.96862745100000003" blue="0.65098039220000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XU9-hW-yLT">
+                                        <rect key="frame" x="20" y="37.5" width="14" height="25"/>
+                                        <state key="normal" image="back"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.56470588239999997" green="0.047058823530000002" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="HEQ-Fm-gDg" firstAttribute="centerY" secondItem="8bH-j5-4jG" secondAttribute="centerY" id="1fR-ZR-5nH"/>
+                                    <constraint firstItem="XU9-hW-yLT" firstAttribute="leading" secondItem="8bH-j5-4jG" secondAttribute="leading" constant="20" id="2d6-fF-CN3"/>
+                                    <constraint firstItem="XU9-hW-yLT" firstAttribute="centerY" secondItem="8bH-j5-4jG" secondAttribute="centerY" id="7m2-xi-tnG"/>
+                                    <constraint firstAttribute="height" constant="100" id="B4d-4i-7bh"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="PJ7-4V-OtE"/>
+                                    <constraint firstItem="HEQ-Fm-gDg" firstAttribute="centerY" secondItem="8bH-j5-4jG" secondAttribute="centerY" id="abj-GL-R6g"/>
+                                    <constraint firstItem="HEQ-Fm-gDg" firstAttribute="centerX" secondItem="8bH-j5-4jG" secondAttribute="centerX" id="uLp-8Y-NvE"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Dqw-lv-xGy">
+                                <rect key="frame" x="50" y="169" width="314" height="103"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How many points until complete?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iQ5-sx-7Wd">
+                                        <rect key="frame" x="0.0" y="0.0" width="314" height="28"/>
+                                        <fontDescription key="fontDescription" name="KohinoorBangla-Semibold" family="Kohinoor Bangla" pointSize="20"/>
+                                        <color key="textColor" red="0.56470588239999997" green="0.047058823530000002" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5FL-bF-8fY">
+                                        <rect key="frame" x="141.5" y="43" width="31" height="60"/>
+                                        <color key="textColor" red="0.56470588239999997" green="0.047058823530000002" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="50"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NOq-By-8GY">
+                                <rect key="frame" x="0.0" y="280" width="414" height="582"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oQg-fM-1ws">
+                                        <rect key="frame" x="0.0" y="532" width="414" height="50"/>
+                                        <color key="backgroundColor" red="0.56470588239999997" green="0.047058823530000002" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Niu-gQ-JdI"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="g6y-qp-m5s"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="22"/>
+                                        <state key="normal" title="CREATE GOAL">
+                                            <color key="titleColor" red="0.85490196080000003" green="0.96862745100000003" blue="0.65098039220000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="createGoalBtnPressed:" destination="qIG-V9-kNs" eventType="touchUpInside" id="5UL-Wt-LV8"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="oQg-fM-1ws" secondAttribute="bottom" id="dZ4-wz-ZBQ"/>
+                                    <constraint firstItem="oQg-fM-1ws" firstAttribute="leading" secondItem="NOq-By-8GY" secondAttribute="leading" id="fqw-EZ-aJB"/>
+                                    <constraint firstAttribute="trailing" secondItem="oQg-fM-1ws" secondAttribute="trailing" id="rfT-IS-9Ks"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="NOq-By-8GY" firstAttribute="bottom" secondItem="SWK-el-g6Z" secondAttribute="bottom" id="8dP-kD-dgH"/>
+                            <constraint firstItem="8bH-j5-4jG" firstAttribute="leading" secondItem="SWK-el-g6Z" secondAttribute="leading" id="FLl-N7-1cm"/>
+                            <constraint firstItem="8bH-j5-4jG" firstAttribute="trailing" secondItem="SWK-el-g6Z" secondAttribute="trailing" id="HjV-Qc-om1"/>
+                            <constraint firstItem="NOq-By-8GY" firstAttribute="trailing" secondItem="SWK-el-g6Z" secondAttribute="trailing" id="jh4-kS-e8j"/>
+                            <constraint firstItem="Dqw-lv-xGy" firstAttribute="top" secondItem="8bH-j5-4jG" secondAttribute="bottom" constant="25" id="knL-5c-ijY"/>
+                            <constraint firstItem="NOq-By-8GY" firstAttribute="top" secondItem="Dqw-lv-xGy" secondAttribute="bottom" constant="8" id="n9F-MX-kRC"/>
+                            <constraint firstItem="8bH-j5-4jG" firstAttribute="top" secondItem="SWK-el-g6Z" secondAttribute="top" id="nbM-QL-45Q"/>
+                            <constraint firstItem="NOq-By-8GY" firstAttribute="leading" secondItem="SWK-el-g6Z" secondAttribute="leading" id="x6b-o9-Wcy"/>
+                            <constraint firstItem="Dqw-lv-xGy" firstAttribute="centerX" secondItem="tH0-4F-nxK" secondAttribute="centerX" id="ydm-PD-XqB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="SWK-el-g6Z"/>
+                    </view>
+                    <connections>
+                        <outlet property="createGoalBtn" destination="oQg-fM-1ws" id="eXm-HY-n10"/>
+                        <outlet property="pointsTextField" destination="5FL-bF-8fY" id="JKb-wu-CS2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gLa-Zb-c3K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1695.6521739130435" y="138.61607142857142"/>
+        </scene>
     </scenes>
     <resources>
         <image name="addGoal" width="35" height="32"/>
