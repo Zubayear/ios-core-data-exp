@@ -342,6 +342,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XU9-hW-yLT">
                                         <rect key="frame" x="20" y="37.5" width="14" height="25"/>
                                         <state key="normal" image="back"/>
+                                        <connections>
+                                            <action selector="backBtnPressed:" destination="qIG-V9-kNs" eventType="touchUpInside" id="Gtl-Pr-56Z"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.56470588239999997" green="0.047058823530000002" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
