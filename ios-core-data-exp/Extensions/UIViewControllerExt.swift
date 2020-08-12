@@ -13,6 +13,22 @@ extension UIViewController {
         present(viewControllerToPresent, animated: false, completion: nil)
     }
     
+    func presentSecondaryDetail(_ viewControllerToPresent: UIViewController) {
+        let transition = CATransition()
+        transition.duration = 0.25
+        transition.type = CATransitionType.push
+        transition.subtype = CATransitionSubtype.fromRight
+        
+        guard let presentedViewController = presentedViewController else {
+            return
+        }
+        
+        presentedViewController.dismiss(animated: false, completion: {
+            self.view.window?.layer.add(transition, forKey: kCATransition)
+            self.present(viewControllerToPresent, animated: false, completion: nil)
+        })
+    }
+    
     func dismissDetail() {
         let transition = CATransition()
         transition.duration = 0.25
